@@ -1,0 +1,29 @@
+.carousel{
+  height: 30vh;
+  width: auto !important;
+  background-color: #7955484d;
+}
+
+.carousel-item{
+  text-align: -webkit-center;
+}
+
+.carousel-item img{
+  height: 30vh;
+  width: initial;
+}
+
+ .carousel-item .wider-image{
+   width: initial;
+ }
+ @media screen and (min-width:768px){
+   .carousel-item .wider-image{
+   width: 100%;
+ }
+ }
+ @media screen and (min-width:1000px){
+  .carousel-item .wider-image{
+  width: initial;
+}
+}
+
