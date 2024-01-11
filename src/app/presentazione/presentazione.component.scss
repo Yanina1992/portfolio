@@ -1,0 +1,70 @@
+// Typing animation
+.container :first-of-type{
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(23),
+  cursor .4s step-end 10;
+}
+
+@keyframes cursor {
+  0% { border-color:  #7f00ff}
+  50% { border-color: transparent }
+
+}
+
+@keyframes typing{
+  from {width: 0}
+}
+
+// Gradient titles
+ .text, h3{
+   background: linear-gradient(to right, #7f00ff, #e100ff);
+   background-clip: text;
+   color: transparent;
+ }
+
+//  Skills section
+.skills-div{
+  align-items: baseline;
+}
+
+.skills{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills img{
+  margin: 1em;
+
+}
+.skills img:hover{
+  transform: scale(1.5);
+}
+
+// @keyframes dissolve{
+//   from {
+//     color: transparent;
+//   }
+//   to {
+//     color: black;
+//   }
+// }
+
+// .fade-in{
+//   opacity: 0;
+//   transform: translateY(20vh);
+//   transition: all 1s cubic-bezier(.215, .61, .355, 1);
+// }
+// .fade-in.in-page{
+//   opacity: 1;
+//   transform: translateY(0vh);
+// }

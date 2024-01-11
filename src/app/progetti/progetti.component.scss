@@ -13,17 +13,22 @@
   width: initial;
 }
 
- .carousel-item .wider-image{
-   width: initial;
- }
- @media screen and (min-width:768px){
-   .carousel-item .wider-image{
-   width: 100%;
- }
- }
- @media screen and (min-width:1000px){
-  .carousel-item .wider-image{
+.carousel-item .wider-image{
   width: initial;
+ }
+
+@media screen and (max-width: 476px){
+ .carousel.item .wider-image{
+ width: -webkit-fill-available;
+ }
+}
+
+@media screen and (max-width:1000px){
+  .carousel-item .wider-image{
+  width: 100%;
 }
 }
+
+
+
 
