@@ -1,70 +1,95 @@
 // Typing animation
-.container :first-of-type{
+.container :first-of-type {
   display: flex;
   justify-content: center;
 }
 
-.text{
+.text {
   border-right: 5px solid;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  animation:
-  typing 2s steps(23),
-  cursor .4s step-end 10;
+  animation: typing 2s steps(23), cursor 0.4s step-end 10;
 }
 
 @keyframes cursor {
-  0% { border-color:  #7f00ff}
-  50% { border-color: transparent }
-
+  0% {
+    border-color: #7f00ff;
+  }
+  50% {
+    border-color: transparent;
+  }
 }
 
-@keyframes typing{
-  from {width: 0}
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
 // Gradient titles
- .text, h3{
-   background: linear-gradient(to right, #7f00ff, #e100ff);
-   background-clip: text;
-   color: transparent;
- }
+.text,
+h3 {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  background-clip: text;
+  color: transparent;
+}
+
+//About
+@media screen and (min-width: 768px) {
+  #about-on-the-right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about-on-the-right {
+    display: flex;
+  }
+}
+
+#about-on-the-left{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  #about-on-the-left {
+    display: none !important;
+  }
+  #about-img{
+    border: 0 !important;
+  }
+}
+
+@media screen and (max-width: 992px){
+  #about-on-the-left {
+    display: flex;
+  }
+  #about-img{
+    border-bottom: solid 100px rgba(179, 172, 162, 0.2784313725);
+    border-left: solid 20px rgba(179, 172, 162, 0.2784313725);
+    border-right: solid 20px rgba(179, 172, 162, 0.2784313725);
+  }
+}
+
+#about-div{
+  flex-direction: column !important;
+}
 
 //  Skills section
-.skills-div{
+.skills-div {
   align-items: baseline;
 }
 
-.skills{
+.skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.skills img{
+.skills img {
   margin: 1em;
-
 }
-.skills img:hover{
+.skills img:hover {
   transform: scale(1.5);
 }
-
-// @keyframes dissolve{
-//   from {
-//     color: transparent;
-//   }
-//   to {
-//     color: black;
-//   }
-// }
-
-// .fade-in{
-//   opacity: 0;
-//   transform: translateY(20vh);
-//   transition: all 1s cubic-bezier(.215, .61, .355, 1);
-// }
-// .fade-in.in-page{
-//   opacity: 1;
-//   transform: translateY(0vh);
-// }

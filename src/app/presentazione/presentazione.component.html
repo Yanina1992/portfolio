@@ -5,13 +5,14 @@
 
 <div class="d-flex container">
   <div class="row d-flex align-items-center border-bottom">
-    <div class="col col-12 col-md-6">
-      <img class="w-100" src="../../assets/IMG_7387.jpg" />
+    <div id="about-div" class="col col-12 col-md-6">
+      <h2 id="about-on-the-left" class="p-3">About me</h2>
+      <img id="about-img" class="w-100" src="../../assets/IMG_7387.jpg" />
     </div>
 
     <div class="col col-12 col-md-6">
-      <h2 class="p-3 watch fade-in anim-title">About me</h2>
-      <p class="p-3 watch fade-in border-start anim-p">
+      <h2 id="about-on-the-right" class="p-3">About me</h2>
+      <p class="p-3 border-start">
         Amante dei libri, della letterature e delle culture tutte, provengo da
         una percorso accademico umanistico, che ho voluto arricchire con un
         corso di alta formazione in ambito tech, per sviluppare il mio pensiero
@@ -35,6 +36,14 @@
     </div>
   </div>
 </div>
+
+<!-- CV -->
+<div class="w-100 d-flex justify-content-center">
+  <a class="btn" href="../../assets/CV Aguero.pdf.pdf" download="CV"
+    >Curriculum Vitae</a
+  >
+</div>
+
 <!-- Skills -->
 <div class="container my-5">
   <div class="row skills-div">
@@ -128,24 +137,3 @@
     </div>
   </div>
 </div>
-
-<!-- <script>
-  var elements_to_watch = document.querySelectorAll(".watch");
-  // callback
-  var callback = function (items) {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        item.target.classList.add(".in-page");
-      } else {
-        item.target.classList.remove(".in-page");
-      }
-    });
-  };
-
-  // observer
-  var observer = new IntersectionObserver(callback, { threshold: 0.5 });
-  // apply
-  elements_to_watch.forEach((element) => {
-    observer.observe(element);
-  });
-</script> -->

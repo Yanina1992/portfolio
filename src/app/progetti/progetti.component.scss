@@ -1,34 +1,73 @@
-.carousel{
-  height: 30vh;
-  width: auto !important;
-  background-color: #7955484d;
+h2 {
+  text-align: center;
 }
 
-.carousel-item{
+//Carousel
+.carousel {
+  height: 30vh;
+  width: auto !important;
+  background-color: rgba(179, 172, 162, 0.2784313725);
+}
+
+.carousel-item {
   text-align: -webkit-center;
 }
 
-.carousel-item img{
+.carousel-item img {
   height: 30vh;
   width: initial;
 }
 
-.carousel-item .wider-image{
+.carousel-item .wider-image {
   width: initial;
- }
-
-@media screen and (max-width: 476px){
- .carousel.item .wider-image{
- width: -webkit-fill-available;
- }
 }
 
-@media screen and (max-width:1000px){
-  .carousel-item .wider-image{
-  width: 100%;
+@media screen and (max-width: 476px) {
+  .carousel.item .wider-image {
+    width: -webkit-fill-available;
+  }
 }
+
+@media screen and (max-width: 1000px) {
+  .carousel-item .wider-image {
+    width: 100%;
+  }
 }
 
+//Card
+.card {
+  background-color: rgb(235 232 225 / 27%);
+  border: 0;
+}
+.card:hover {
+  border: 1px solid #7f00ff;
+}
 
+a {
+  color: #7f00ff;
+}
 
+.accordion-button {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
 
+.accordion-button:hover,
+a:hover {
+  color: #e100ff;
+}
+
+h5 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.fa-solid {
+  color:#7f00ff;
+  font-size: 2em;
+  z-index: 0;
+}
+
+.fa-solid:hover {
+  color:#e100ff
+}
