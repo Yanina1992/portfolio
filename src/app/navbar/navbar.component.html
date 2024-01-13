@@ -89,12 +89,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item nav-link active" aria-current="page" routerLink="">
+        <li
+          class="nav-item nav-link active"
+          aria-current="page"
+          routerLink=""
+          (click)="(onClick)"
+        >
           Mi presento
         </li>
-        <li class="nav-item nav-link" routerLink="progetti">Progetti</li>
         <li>
-          <a class="nav-link nav-item" href="#footer">Contatti</a>
+          <a class="nav-link nav-item" routerLink="progetti" (click)="(onClick)"
+            >Progetti</a
+          >
+        </li>
+        <li>
+          <a class="nav-link nav-item" href="#footer" (click)="(onClick)"
+            >Contatti</a
+          >
         </li>
       </ul>
     </div>

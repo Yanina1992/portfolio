@@ -27,6 +27,16 @@
   }
 }
 
+h1{
+  font-weight: 700;
+}
+
+@media screeen and (max-width: 576px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
 // Gradient titles
 .text,
 h3 {
@@ -48,31 +58,31 @@ h3 {
   }
 }
 
-#about-on-the-left{
+#about-on-the-left {
   display: none;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   #about-on-the-left {
     display: none !important;
   }
-  #about-img{
+  #about-img {
     border: 0 !important;
   }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   #about-on-the-left {
     display: flex;
   }
-  #about-img{
+  #about-img {
     border-bottom: solid 100px rgba(179, 172, 162, 0.2784313725);
     border-left: solid 20px rgba(179, 172, 162, 0.2784313725);
     border-right: solid 20px rgba(179, 172, 162, 0.2784313725);
   }
 }
 
-#about-div{
+#about-div {
   flex-direction: column !important;
 }
 
@@ -92,4 +102,10 @@ h3 {
 }
 .skills img:hover {
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    width: auto;
+  }
 }
