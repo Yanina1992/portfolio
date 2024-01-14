@@ -19,7 +19,8 @@ h2 {
 }
 
 .carousel-item .wider-image {
-  width: initial;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 476px) {
