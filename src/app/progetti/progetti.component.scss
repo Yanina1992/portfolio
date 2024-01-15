@@ -72,3 +72,20 @@ h5 {
 .fa-solid:hover {
   color:#e100ff
 }
+
+   .c-b{
+    margin-top: 2.7em;
+  }
+
+  @media screen and (max-width: 468px) {
+    .c-b{
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .c-b{
+      margin-top: 7em;
+    }
+  }
+
